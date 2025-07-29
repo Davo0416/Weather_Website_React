@@ -1,0 +1,27 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.owm-layercontrol-header {
+	font-weight: bold;
+	display: block;
+	position: relative;
+	font-size: 12px;
+}
+
+.owm-layercontrol-h1{
+	font-weight: bold;
+	display: block;
+	position: relative;
+	font-size: 16px;
+}
+
+#map{
+	border-radius: 10px;
+}

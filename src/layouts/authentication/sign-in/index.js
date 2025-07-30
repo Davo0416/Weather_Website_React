@@ -50,7 +50,7 @@ function Basic() {
 
     // Send a post request to the backend for the sign in
     try {
-      const res = await fetch("http://localhost:5000/api/signin", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/signin`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

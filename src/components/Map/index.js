@@ -50,7 +50,7 @@ function Map({ settings, callCity, color, setLength, doUpdate, doRoute }) {
         await loadCSS("/scripts/leaflet/leaflet.css");
         await loadCSS("/scripts/leaflet/files/map.css");
         if (typeof window.initMap === "function") {
-          window.initMap();
+          window.initMap(process.env.REACT_APP_API_URL);
         } else {
           console.error("initMap function not found.");
         }
@@ -104,9 +104,9 @@ function Map({ settings, callCity, color, setLength, doUpdate, doRoute }) {
         const routeToShow = settings.route || routesState.currentRoute;
         console.log(settings.route, routesState.currentRoute);
         if (doUpdate) {
-          window.Route(routeToShow, setLength);
+          window.Route(routeToShow, setLength, process.env.REACT_APP_API_URL);
         } else {
-          window.Route(routeToShow, null);
+          window.Route(routeToShow, null, process.env.REACT_APP_API_URL);
         }
       }
     }

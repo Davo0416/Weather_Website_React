@@ -20,7 +20,9 @@ export function AlertProvider({ children }) {
       // Check for user and send a get request to the backend
       if (user?._id) {
         try {
-          const res = await fetch(`http://localhost:5000/api/user/notifications/${user._id}`);
+          const res = await fetch(`
+            ${process.env.REACT_APP_API_URL}/api/user/notifications/${user._id}
+          `);
           if (res.ok) {
             const data = await res.json();
             if (Array.isArray(data)) setAlerts(data);
@@ -42,7 +44,7 @@ export function AlertProvider({ children }) {
       // Check for user and the load flag and post the new alerts to the backend
       if (user?._id && hasLoadedAlerts) {
         try {
-          await fetch(`http://localhost:5000/api/user/notifications/${user._id}`, {
+          await fetch(`${process.env.REACT_APP_API_URL}/api/user/notifications/${user._id}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ alerts }),

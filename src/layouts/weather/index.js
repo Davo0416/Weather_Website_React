@@ -22,7 +22,7 @@ import { useMaterialUIController } from "context";
 
 var selectedForecast = -1;
 
-function weather() {
+function WeatherPage() {
   const { imperialUnits } = useUnits();
   const { weatherState, setWeatherState } = useWeather();
   const [controller, dispatch] = useMaterialUIController();
@@ -675,4 +675,4 @@ function weather() {
   );
 }
 
-export default weather;
+export default WeatherPage;

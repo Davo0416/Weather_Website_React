@@ -162,7 +162,7 @@ var clouds, precipitation, rain, snow, temp, wind, pressure, pressurecntr, city,
 var routingControl = null;
 
 //Initialize the map.
-function initMap() {
+function initMap(apiUrl) {
 	//Resetting the previous map instance
 	if (L.DomUtil.get("map") != null) {
 		const existingMap = L.DomUtil.get("map");
@@ -204,7 +204,7 @@ function initMap() {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</a> <a href="https://www.hotosm.org/" target="_blank">Tiles courtesy of Humanitarian OpenStreetMap Team</a>'
 	});
 
-	fetch("http://localhost:5000/api/owm-layers")
+	fetch(`${apiUrl}/api/owm-layers`)
     .then(res => res.json())
     .then(data => {
       const tileLayers = data.tileLayers;
@@ -374,7 +374,7 @@ var passByIcon = L.icon({
 
 // Function to generate the given route
 var currentRouteGeneration = 0;
-function Route(route, setLength) {
+function Route(route, setLength, apiUrl) {
 	currentRouteGeneration++;
 	const generation = currentRouteGeneration;
 
@@ -660,7 +660,7 @@ function Route(route, setLength) {
 					const centerLon = parseFloat(data.lon);
 
 					//Fetch weather forecast for this location
-					const weatherRes = await fetch(`http://localhost:5000/api/forecast?lat=${centerLat}&lon=${centerLon}`);
+					const weatherRes = await fetch(`${apiUrl}/api/forecast?lat=${centerLat}&lon=${centerLon}`);
 					if (!weatherRes.ok) {
 						console.warn('Failed to fetch weather for', cityName);
 						continue;

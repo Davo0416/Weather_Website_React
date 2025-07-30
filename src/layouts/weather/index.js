@@ -246,8 +246,8 @@ function WeatherPage() {
 
   // Update weather by location or ID function
   const updateWeather = (loc, isByID) => {
-    let url = `http://localhost:5000/api/weather?city=${encodeURIComponent(loc)}`;
-    if (isByID) url = `http://localhost:5000/api/weather?id=${loc}`;
+    let url = `${process.env.REACT_APP_API_URL}/api/weather?city=${encodeURIComponent(loc)}`;
+    if (isByID) url = `${process.env.REACT_APP_API_URL}/api/weather?id=${loc}`;
 
     // Call the backend for the data
     fetch(url)
@@ -335,8 +335,8 @@ function WeatherPage() {
 
   // Update forecast based on the location or ID function
   const updateForecast = (loc, tz, isByID, weatherData) => {
-    let url = `http://localhost:5000/api/forecast?city=${encodeURIComponent(loc)}`;
-    if (isByID) url = `http://localhost:5000/api/forecast?id=${loc}`;
+    let url = `${process.env.REACT_APP_API_URL}/api/forecast?city=${encodeURIComponent(loc)}`;
+    if (isByID) url = `${process.env.REACT_APP_API_URL}/api/forecast?id=${loc}`;
 
     // Call backend for the forecast data
     fetch(url)
@@ -511,7 +511,7 @@ function WeatherPage() {
   function successPos(position) {
     // Call backend for geolocation
     fetch(
-      `http://localhost:5000/api/reverse-geocode?lat=${position.coords.latitude}&lon=${position.coords.longitude}`
+      `${process.env.REACT_APP_API_URL}/api/reverse-geocode?lat=${position.coords.latitude}&lon=${position.coords.longitude}`
     )
       .then((response) => response.json())
       .then((data) => {

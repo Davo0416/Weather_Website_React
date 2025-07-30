@@ -13,7 +13,7 @@ const Joi = require("joi");
 
 // Use cors
 app.use(cors({
-  origin: "http://localhost:3000", // change to deployed frontend domain
+  origin: "https://skyroutereact.netlify.app/", // deployed frontend domain
   credentials: true
 }));
 app.use(express.json({ limit: '2mb' }));

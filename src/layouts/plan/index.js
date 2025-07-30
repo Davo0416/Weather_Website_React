@@ -63,7 +63,7 @@ function Plan() {
 
   // Fetch forecast for a given city from the backend
   const getForecast = async (loc) => {
-    const url = `http://localhost:5000/api/forecast?city=${encodeURIComponent(loc)}`;
+    const url = `${process.env.REACT_APP_API_URL}/api/forecast?city=${encodeURIComponent(loc)}`;
 
     try {
       const response = await fetch(url);

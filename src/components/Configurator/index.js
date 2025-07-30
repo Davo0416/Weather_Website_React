@@ -138,7 +138,7 @@ function Configurator() {
     const loadSettings = async () => {
       if (user?._id) {
         try {
-          const res = await fetch(`http://localhost:5000/api/user/settings/${user._id}`);
+          const res = await fetch(`${process.env.REACT_APP_API_URL}/api/user/settings/${user._id}`);
           if (res.ok) {
             const data = await res.json();
             console.log("✅ Settings Loaded:", data);
@@ -190,7 +190,7 @@ function Configurator() {
   const saveSettings = async (settings) => {
     if (user?._id) {
       try {
-        const res = await fetch(`http://localhost:5000/api/user/settings/${user._id}`, {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/user/settings/${user._id}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ settings }),

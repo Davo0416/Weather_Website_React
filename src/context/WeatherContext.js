@@ -21,7 +21,7 @@ export const WeatherProvider = ({ children }) => {
     // Check for user and post the new weather to the backend
     if (user?._id) {
       try {
-        await fetch(`http://localhost:5000/api/user/weather/${user._id}`, {
+        await fetch(`${process.env.REACT_APP_API_URL}/api/user/weather/${user._id}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ userId: user._id, weather: updatedWeather }),
@@ -38,7 +38,7 @@ export const WeatherProvider = ({ children }) => {
       // Check for user and send a get request to the backend
       if (user?._id) {
         try {
-          const res = await fetch(`http://localhost:5000/api/user/weather/${user._id}`);
+          const res = await fetch(`${process.env.REACT_APP_API_URL}/api/user/weather/${user._id}`);
           if (res.ok) {
             const data = await res.json();
             if (data) setWeatherStateLocal(data);

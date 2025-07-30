@@ -7,7 +7,7 @@ import { useUnits } from "context/UnitsContext";
 
 // Functional component for rendering a card with precipitation data
 function PrecipitationCard({ color, type, pop, volume, time }) {
-  const { imperialUnits, setImperialUnits } = useUnits();
+  const { imperialUnits } = useUnits();
 
   const convertMM = (mm) => (imperialUnits ? Math.round((mm / 25.4) * 100) / 100 : mm);
   const precipUnitLabel = imperialUnits ? "in/h" : "mm/h";

@@ -2,8 +2,8 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 // Context setup
-const RoutesContext = createContext();
 import { useUser } from "context/UserContext";
+const RoutesContext = createContext();
 
 export function RoutesProvider({ children }) {
   const [routesState, setRoutesState] = useState({

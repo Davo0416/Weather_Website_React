@@ -21,7 +21,7 @@ export function RoutesProvider({ children }) {
       // Check for user and send a get request to the backend
       if (user?._id) {
         try {
-          const res = await fetch(`http://localhost:5000/api/user/routes/${user._id}`);
+          const res = await fetch(`${process.env.REACT_APP_API_URL}/api/user/routes/${user._id}`);
           if (res.ok) {
             const data = await res.json();
             if (data) {
@@ -44,7 +44,7 @@ export function RoutesProvider({ children }) {
       // Check for user and post new routes to the backend
       if (user?._id && hasLoadedRoutes) {
         try {
-          await fetch(`http://localhost:5000/api/user/routes/${user._id}`, {
+          await fetch(`${process.env.REACT_APP_API_URL}/api/user/routes/${user._id}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ routesState }),

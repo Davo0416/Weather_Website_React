@@ -39,6 +39,11 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 
 **APIs:**
 - [OpenWeatherMap API](https://openweathermap.org/api) for real-time weather data
+- [Nomatim API](https://nominatim.org). for route creation and reverse geocoding
+
+**Hosting:**
+- **Frontend:** [Netlify](https://www.netlify.com/) for fast, globally distributed hosting  
+- **Backend:** [Render](https://render.com/) for reliable cloud server and database hosting
 
 ---
 
@@ -77,3 +82,35 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 4. Run the Application
    ```bash
    npm start
+
+## Images
+
+Below are screenshots of the main pages of the application. Add these image files to an `images/` folder in the repo (or update the paths below to match your structure).
+
+### Home / Dashboard
+![Dashboard](images/dashboard.png)
+
+### Weather Page and Map
+![Weather Page](<img width="1920" height="1749" alt="image" src="https://github.com/user-attachments/assets/07935372-f87e-4a84-bcb3-5384d442d406" />)
+
+### Interactive Weather Map
+![Interactive Weather Map](images/map.png)
+
+### Route Planning Page
+![Route Planning](images/route-planning.png)
+
+### User Login
+![Saved Routes](images/saved-routes.png)
+
+---
+
+## Future Enhancements
+- Using paid API tiers or making own API solutions for faster data retrieval
+- Severe weather alerts for planned routes and reschedule suggestions
+- Offline route saving and map access
+- Multi-day trip weather forecasting
+
+---
+
+## License
+This project is released under the [MIT License](./LICENSE).

@@ -88,19 +88,28 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 Below are screenshots of the main pages of the application. Add these image files to an `images/` folder in the repo (or update the paths below to match your structure).
 
 ### Home / Dashboard
-![Dashboard](images/dashboard.png)
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/6fece980-7566-4d64-8128-9139b5544d91" />
 
 ### Weather Page and Map
-![Weather Page](<img width="1920" height="1749" alt="Sky-Route" src="https://github.com/user-attachments/assets/63e7da0f-9aee-4abf-a41d-3a6fb7ac5a81" />)
+<img width="1920" height="1749" alt="Sky-Route" src="https://github.com/user-attachments/assets/63e7da0f-9aee-4abf-a41d-3a6fb7ac5a81" />
 
 ### Interactive Weather Map
-![Interactive Weather Map](images/map.png)
+<img width="1075" height="700" alt="image" src="https://github.com/user-attachments/assets/d6f70fbd-a015-4f09-8db8-ac7483aedaf7" />
 
 ### Route Planning Page
-![Route Planning](images/route-planning.png)
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/e723c456-aab7-462f-a0eb-8e051a621705" />
 
-### User Login
-![Saved Routes](images/saved-routes.png)
+### Notifications Page
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/0f15b089-d26d-4017-949a-b103b3dde4a2" />
+
+### User Sign-up
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/51235bb7-8810-4ded-b619-a2299da19599" />
+
+### User Sign-in
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/9e811b46-20bb-40fd-b2f8-71019e31a90c" />
+
+### Settings SideBar
+<img width="358" height="946" alt="image" src="https://github.com/user-attachments/assets/3eb9a73a-ea2f-4c86-8540-4956b0c1f9a3" />
 
 ---
 

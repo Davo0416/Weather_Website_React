@@ -1,6 +1,6 @@
 # Interactive Weather & Route Planning Website
 
-# [View Webpage]([https://your-netlify-link.netlify.app](https://skyroutereact.netlify.app/)
+# [View Webpage]([https://your-netlify-link.netlify.app](https://skyroutereact.netlify.app/])
 
 ## Overview
 This project is a responsive, interactive web application that provides **real-time weather information** for any global city or the user’s current location. It also features **route planning with weather-aware navigation**, allowing users to plan trips while considering current weather conditions.

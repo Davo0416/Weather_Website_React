@@ -75,5 +75,5 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    DATABASE_URL=your_database_url
 
 4. Run the Application
-  ```bash
-  npm start
+   ```bash
+   npm start

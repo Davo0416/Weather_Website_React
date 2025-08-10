@@ -64,3 +64,16 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    ```bash
    git clone https://github.com/yourusername/weather-route-planner.git
    cd weather-route-planner
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+
+3. **Set Environment Variables**
+   ```bash
+   OPENWEATHER_API_KEY=your_api_key
+   DATABASE_URL=your_database_url
+
+4. Run the Application
+  ```bash
+  npm start

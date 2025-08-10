@@ -91,7 +91,7 @@ Below are screenshots of the main pages of the application. Add these image file
 ![Dashboard](images/dashboard.png)
 
 ### Weather Page and Map
-![Weather Page](https://github.com/user-attachments/assets/07935372-f87e-4a84-bcb3-5384d442d406/>)
+![Weather Page](<img width="1920" height="1749" alt="Sky-Route" src="https://github.com/user-attachments/assets/63e7da0f-9aee-4abf-a41d-3a6fb7ac5a81" />)
 
 ### Interactive Weather Map
 ![Interactive Weather Map](images/map.png)

@@ -35,7 +35,7 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 
 **Backend:**
 - Node.js & Express.js for API handling and server logic
-- PostgreSQL or MongoDB for user data and route storage
+- MongoDB for user data and route storage
 
 **APIs:**
 - [OpenWeatherMap API](https://openweathermap.org/api) for real-time weather data

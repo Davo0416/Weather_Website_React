@@ -96,7 +96,7 @@ Open your browser and navigate to http://localhost:5000 (or the frontend URL if 
 
 ## Images
 
-Below are screenshots of the main pages of the application. Add these image files to an `images/` folder in the repo (or update the paths below to match your structure).
+Below are screenshots of the main pages of the application.
 
 ### Home / Dashboard
 <img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/6fece980-7566-4d64-8128-9139b5544d91" />

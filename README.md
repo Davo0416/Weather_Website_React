@@ -91,6 +91,9 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    cd "server directory"
    node server.js
 
+5. Access the Application
+Open your browser and navigate to http://localhost:5000 (or the frontend URL if applicable) to use the app.
+
 ## Images
 
 Below are screenshots of the main pages of the application. Add these image files to an `images/` folder in the repo (or update the paths below to match your structure).

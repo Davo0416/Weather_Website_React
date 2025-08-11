@@ -81,6 +81,10 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    OPENWEATHER_API_KEY=your_api_key
    DATABASE_URL=your_database_url
 
+3. **Modify the cors origin in server.js to http://localhost:5000 or your frontend domain**
+   ```bash
+   origin: "http://localhost:5000", // or yout deployed frontend domain
+
 4. **Run the Application**
    ```bash
    npm start

@@ -83,7 +83,13 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 
 4. Run the Application
    ```bash
+   cd "project directory"
    npm start
+
+4. Run the Server
+   ```bash
+   cd "server directory"
+   node server.js
 
 ## Images
 

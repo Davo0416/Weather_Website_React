@@ -81,17 +81,17 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    OPENWEATHER_API_KEY=your_api_key
    DATABASE_URL=your_database_url
 
-4. Run the Application
+4. **Run the Application**
    ```bash
    cd "project directory"
    npm start
 
-4. Run the Server
+5. **Run the Server**
    ```bash
    cd "server directory"
    node server.js
 
-5. Access the Application
+6. **Access the Application**
 Open your browser and navigate to http://localhost:5000 (or the frontend URL if applicable) to use the app.
 
 ## Images

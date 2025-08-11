@@ -70,7 +70,7 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/weather-route-planner.git
-   cd weather-route-planner
+   cd Weather_Website_React-main
 
 2. **Install Dependencies**
    ```bash
@@ -83,12 +83,11 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 
 4. **Run the Application**
    ```bash
-   cd "project directory"
    npm start
 
 5. **Run the Server**
    ```bash
-   cd "server directory"
+   cd server
    node server.js
 
 6. **Access the Application**

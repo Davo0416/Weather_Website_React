@@ -76,26 +76,33 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    ```bash
    npm install
 
-3. **Set Environment Variables**
+3. **Set Server Variables**
+   Create a .env file in the server folder and populate it with this
    ```bash
    OPENWEATHER_API_KEY=your_api_key
    DATABASE_URL=your_database_url
 
-3. **Modify the cors origin in server.js to http://localhost:5000 or your frontend domain**
+4. **Set Project Variables**
+   Create another .env file in the main project folder and populate it with this
+   ```bash
+   REACT_APP_API_URL=http://localhost:5000 // or yout deployed backend domain
+   CI=false 
+
+5. **Modify the cors origin in server.js to http://localhost:5000 or your frontend domain**
    ```bash
    origin: "http://localhost:3000", // or yout deployed frontend domain
 
-4. **Run the Application**
+6. **Run the Application**
    ```bash
    npm start
 
-5. **Run the Server**
+7. **Run the Server**
    ```bash
    cd server
    node server.js
 
-6. **Access the Application**
-Open your browser and navigate to http://localhost:5000 (or the frontend URL if applicable) to use the app.
+8. **Access the Application**
+Open your browser and navigate to http://localhost:3000 (or the frontend URL if applicable) to use the app.
 
 ## Images
 

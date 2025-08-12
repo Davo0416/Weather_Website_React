@@ -88,7 +88,7 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    REACT_APP_API_URL=http://localhost:5000 // or yout deployed backend domain
    CI=false 
 
-5. **Modify the cors origin in server.js to http://localhost:5000 or your frontend domain**
+5. **Modify the cors origin in server.js to http://localhost:3000 or your frontend domain**
    ```bash
    origin: "http://localhost:3000", // or yout deployed frontend domain
 

@@ -101,7 +101,7 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
    cd server
    node server.js
 
-8. **Access the Application**
+8. **Access the Application**  
 Open your browser and navigate to http://localhost:3000 (or the frontend URL if applicable) to use the app.
 
 ## Images

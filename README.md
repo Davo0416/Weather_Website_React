@@ -83,7 +83,7 @@ The platform combines **clear visual data**, **interactive maps**, and **persona
 
 3. **Modify the cors origin in server.js to http://localhost:5000 or your frontend domain**
    ```bash
-   origin: "http://localhost:5000", // or yout deployed frontend domain
+   origin: "http://localhost:3000", // or yout deployed frontend domain
 
 4. **Run the Application**
    ```bash
